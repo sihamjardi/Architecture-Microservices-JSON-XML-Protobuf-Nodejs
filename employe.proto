@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// Définition d'un employé
+message Staff {
+  int32 staffId = 1;
+  string fullName = 2;
+  int32 monthlySalary = 3;
+  string email = 4;
+  string hireDate = 5;
+}
+
+// Définition de la liste d'employés
+message StaffList {
+  repeated Staff staff = 1;
+}
